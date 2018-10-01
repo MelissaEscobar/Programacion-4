@@ -1,0 +1,148 @@
+
+// 1
+
+public class Par{
+    
+        // algoritmo para saber si un numero es par o impar
+   //System.out.println("Ingrese el número");
+
+    int x;
+    x=6;
+        
+    if (x%2 == 0){
+            System.out.println("El numero es par");
+    }else{
+            System.out.println("El numero es impar");
+    
+     }
+    
+}
+
+
+
+// 2
+
+public class Factorial {
+    
+    int x;
+    int n=1;
+    int fact=1;
+    
+    if(x==0 || x==1){
+            System.out.println("El factorial es 1");
+    }else{
+        
+    while(n <= x){
+        fact= fact * n;
+        n = n+1;        
+    }
+            System.out.println("El factorial de " + x + " es: " + fact);   
+    
+    }
+    
+}
+
+//3
+
+public class Fibonacci{
+  int x0 = 1;
+        int x1 = 1;
+        int n = 10; // numero n 
+        
+        if(n==0){
+            System.out.print(x0 + ", ");
+        } else if(n==1){
+            System.out.print(x1 + ", ");
+        }else{
+            
+        System.out.print(x0 + ", ");
+        System.out.print(x1 + ", ");
+ 
+        for(int i = 0; i<n-2; i++){
+            x1 = x0 + x1;
+            x0 = x1 - x0;
+            System.out.print(x1 + ", ");
+        }
+        
+        }
+}
+
+
+// 4
+
+public class Exponente {
+    int y =5; // y es la base
+    int x=4; // x es el exponente
+    int m=1; // m es la variable donde se almacenará el resultado de la multiplicación
+    int cont=1; // contador
+    
+    
+    while(cont <= x){
+    m = m * y;
+    cont++;   
+}   
+     System.out.println(y+ " elevado a la " + x + " es: "+ m);
+    
+}
+
+//5
+
+public class Primo {
+    int x= 3; // x e sel numero a evaluar
+    int c = 2;// c va a ser el contador que me permitirá hacer divisiones 
+              //sucesivas para saber si el numero es primo
+    int aux =0;
+    if (x ==1){
+            System.out.println("El numero no es primo");
+    } else if (x==2) {
+      System.out.println("El numero es primo");
+      
+    } else {
+      while (c <= x){
+        if (x % c == 0){
+          aux++;
+          break;
+        }else{
+          aux =aux;
+        }
+        c++;        
+      }
+
+      if (aux==0) {
+        System.out.println("El numero es primo");
+      } else {
+        System.out.println("El numero no es primo");
+      }
+        
+    }
+    
+}
+
+// 6: Dado un numero de horas, construir un programa que calcule el numero de 
+// dias, semanas y meses
+
+public class Calcular{
+  
+int  x= 1024; // x es la variable del numero de horas
+System.out.println("El numero de días es aproximadamente: " + x/24 );
+System.out.println("El numero de semanas es aproximadamente: " + x/(24*7));
+System.out.println("El numero de meses es aproximadamente: " + x/(24*7*4)); // suponiendo que 
+//cada mes tiene 4 semanas
+
+
+}
+
+// 7
+public class Raices {
+     float a=1, b=4, c=3, x1, x2, det;
+        
+        det = (b*b)-(4*a*c);
+        
+        x1 = (float) ((-b + Math.sqrt(det)) / (2*a));
+        x2 = (float) ((-b - Math.sqrt(det)) / (2*a));
+        
+        System.out.print( "Las raices de la ecuacion son: X1= "+ x1 + ", X2= " + x2);
+    
+}
+
+
